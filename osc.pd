@@ -1,1 +1,10 @@
-#N canvas 76 76 450 271 12;
+#N canvas 2298 268 3840 2024 12;
+#X msg 126 69 devices;
+#X msg 210 80 close;
+#X msg 280 78 baud 115200 \, open 8;
+#X obj 213 134 comport;
+#X obj 212 198 pdchoco/slip_parse;
+#X obj 238 271 oscparse;
+#X connect 0 0 3 0;
+#X connect 1 0 3 0;
+#X connect 2 0 3 0;
